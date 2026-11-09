@@ -254,7 +254,7 @@
             <button class="feature" data-action="rewards"><svg class="art" aria-hidden="true"><use href="#reward"/></svg><span class="feature-title">A little more rewarding</span><span class="feature-caption">Explore your rewards.</span></button>
           </div>
         </section>
-        <p class="demo-note">Independent prototype · No real transactions.</p>
+        
       </section>
       <section id="screen-send" data-screen="send" aria-labelledby="send-title" hidden>
         <header class="send-header"><button class="send-back" data-action="send-back" aria-label="Back"><svg aria-hidden="true"><use href="#chevron"/></svg></button><h1 id="send-title" data-page-title tabindex="-1">Send</h1></header>
@@ -269,7 +269,7 @@
         <header class="send-header"><button class="send-back" data-action="page-back" aria-label="Back to Send"><svg aria-hidden="true"><use href="#chevron"/></svg></button><h1 id="interac-title" data-page-title tabindex="-1">Interac e-Transfer®</h1></header>
         <div class="transfer-intro"><h2>Choose a profile</h2><p>Select your profile to choose an amount.</p></div>
         <button class="recipient-card" data-action="interac-amount"><span class="recipient-avatar" aria-hidden="true">V</span><span class="recipient-details"><strong>Veronica Khusial</strong><small>vkhusial@gmail.com</small></span><svg aria-hidden="true"><use href="#chevron"/></svg></button>
-        <p class="transfer-caption">Simulation · No bank connection.</p>
+        
       </section>
       <section id="screen-interac-amount" data-screen="interac-amount" aria-labelledby="interac-amount-title" hidden>
         <header class="send-header"><button class="send-back" data-action="page-back" aria-label="Back to profiles"><svg aria-hidden="true"><use href="#chevron"/></svg></button><h1 id="interac-amount-title" data-page-title tabindex="-1">Enter amount</h1></header>
@@ -282,21 +282,21 @@
           <div class="amount-presets" aria-label="Suggested amounts"><button type="button" data-amount="10.00">$10</button><button type="button" data-amount="25.00">$25</button><button type="button" data-amount="50.00">$50</button><button type="button" data-action="amount-max">Max</button></div>
           <button class="primary" type="submit">Request withdrawal</button>
         </form>
-        <p class="transfer-notice">Simulation · BTC is converted to CAD at the example rate. No real money will be sent.</p>
+        <p class="transfer-notice">BTC will be converted to CAD.</p>
       </section>
       <section id="screen-interac-review" data-screen="interac-review" aria-labelledby="interac-review-title" hidden>
         <header class="send-header"><button class="send-back" data-action="page-back" aria-label="Back to amount"><svg aria-hidden="true"><use href="#chevron"/></svg></button><h1 id="interac-review-title" data-page-title tabindex="-1">Review withdrawal</h1></header>
         <div class="review-amount"><span id="review-amount">$0.00</span><small>CAD</small></div>
-        <div class="transfer-summary"><div class="row"><span>To</span><strong>Veronica Khusial<small>vkhusial@gmail.com</small></strong></div><div class="row"><span>From</span><strong>Bitcoin<small>Simulated conversion to CAD</small></strong></div><div class="row"><span>BTC used</span><strong id="review-btc">0.00000000 BTC</strong></div><div class="row"><span>Example rate</span><strong>$96,974.72 CAD / BTC</strong></div><div class="row"><span>Simulation fee</span><strong>$0.00 CAD</strong></div><div class="row"><span>Balance after</span><strong id="review-balance">$133,243.02 CAD</strong></div></div>
+        <div class="transfer-summary"><div class="row"><span>To</span><strong>Veronica Khusial<small>vkhusial@gmail.com</small></strong></div><div class="row"><span>From</span><strong>Bitcoin<small>Conversion to CAD</small></strong></div><div class="row"><span>BTC used</span><strong id="review-btc">0.00000000 BTC</strong></div><div class="row"><span>Conversion rate</span><strong>$96,974.72 CAD / BTC</strong></div><div class="row"><span>Fee</span><strong>$0.00 CAD</strong></div><div class="row"><span>Balance after</span><strong id="review-balance">$133,243.02 CAD</strong></div></div>
         <p id="review-error" class="amount-error" role="alert"></p>
         <button class="primary" id="confirm-demo-send" data-action="confirm-interac">Withdraw</button>
         <button class="secondary" data-action="edit-interac" style="margin-top:10px">Edit amount</button>
-        <p class="transfer-notice">Simulation · No real money or emails will be sent.</p>
+        
       </section>
       <section id="screen-interac-success" data-screen="interac-success" aria-labelledby="interac-success-title" hidden>
         <header class="send-header"><h1 id="interac-success-title" data-page-title tabindex="-1">Interac e-Transfer</h1></header>
         <div class="success-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h2 class="success-heading">Withdrawal requested</h2><p class="success-caption">Simulated request · No real withdrawal was submitted.</p>
+        <h2 class="success-heading">Withdrawal requested</h2>
         <div class="review-amount"><span id="success-amount">$0.00</span><small>CAD</small></div>
         <div class="transfer-summary"><div class="row"><span>To</span><strong>Veronica Khusial<small>vkhusial@gmail.com</small></strong></div><div class="row"><span>Remaining value</span><strong data-total-balance data-money="$133,243.02">$133,243.02</strong></div><div class="row"><span>Remaining BTC</span><strong><span data-btc-quantity data-money="1.37399747">1.37399747</span> BTC</strong></div></div>
         <button class="primary" data-action="transfer-done">Back to home</button><button class="secondary" data-action="send-interac" style="margin-top:10px">Make another withdrawal</button>
@@ -315,14 +315,14 @@
           <p class="amount-error" id="wire-error" role="alert"></p>
           <button class="primary" type="submit">Review account details</button><button class="secondary" type="button" data-action="clear-wire">Clear details</button>
         </form>
-        <p class="transfer-notice">Simulation · No bank connection. Account details stay in this tab only and are cleared on refresh.</p>
+        <p class="transfer-notice">Your account details stay in this tab only.</p>
       </section>
       <section id="screen-wire-review" data-screen="wire-review" aria-labelledby="wire-review-title" hidden>
         <header class="send-header"><button class="send-back" data-action="page-back" aria-label="Back to account details"><svg aria-hidden="true"><use href="#chevron"/></svg></button><h1 id="wire-review-title" data-page-title tabindex="-1">Review account</h1></header>
         <h2 class="wire-review-heading">Check your details</h2><p class="transfer-caption">Your account number is masked on this screen.</p>
         <div class="transfer-summary" id="wire-summary"></div>
         <button class="primary" data-action="confirm-wire">Continue to amount</button><button class="secondary" data-action="page-back" style="margin-top:10px">Edit details</button>
-        <p class="transfer-notice">Simulation · Account details are not verified, saved to a server, or used for a real transfer.</p>
+        
       </section>
       <section id="screen-wire-amount" data-screen="wire-amount" aria-labelledby="wire-amount-title" hidden>
         <header class="send-header"><button class="send-back" data-action="page-back" aria-label="Back to account details"><svg aria-hidden="true"><use href="#chevron"/></svg></button><h1 id="wire-amount-title" data-page-title tabindex="-1">Withdrawal amount</h1></header>
@@ -335,19 +335,19 @@
           <div class="amount-presets" aria-label="Suggested withdrawal amounts"><button type="button" data-amount="100.00" data-method="wire">$100</button><button type="button" data-amount="1000.00" data-method="wire">$1,000</button><button type="button" data-amount="10000.00" data-method="wire">$10,000</button><button type="button" data-action="wire-amount-max">Max</button></div>
           <button class="primary" type="submit">Request withdrawal</button>
         </form>
-        <p class="transfer-notice">Simulation · BTC is converted to CAD at the example rate. No real withdrawal will be made.</p>
+        <p class="transfer-notice">BTC will be converted to CAD.</p>
       </section>
       <section id="screen-wire-withdraw-review" data-screen="wire-withdraw-review" aria-labelledby="wire-withdraw-review-title" hidden>
         <header class="send-header"><button class="send-back" data-action="page-back" aria-label="Back to withdrawal amount"><svg aria-hidden="true"><use href="#chevron"/></svg></button><h1 id="wire-withdraw-review-title" data-page-title tabindex="-1">Review withdrawal</h1></header>
         <div class="review-amount"><span id="wire-review-amount">$0.00</span><small>CAD</small></div>
-        <div class="transfer-summary"><div class="row"><span>To</span><strong><span id="wire-review-holder">Veronica Khusial</span><small id="wire-review-destination"></small></strong></div><div class="row"><span>From</span><strong>Bitcoin<small>Simulated conversion to CAD</small></strong></div><div class="row"><span>BTC used</span><strong id="wire-review-btc">0.00000000 BTC</strong></div><div class="row"><span>Example rate</span><strong>$96,974.72 CAD / BTC</strong></div><div class="row"><span>Simulation fee</span><strong>$0.00 CAD</strong></div><div class="row"><span>Balance after</span><strong id="wire-review-balance">$133,243.02 CAD</strong></div></div>
+        <div class="transfer-summary"><div class="row"><span>To</span><strong><span id="wire-review-holder">Veronica Khusial</span><small id="wire-review-destination"></small></strong></div><div class="row"><span>From</span><strong>Bitcoin<small>Conversion to CAD</small></strong></div><div class="row"><span>BTC used</span><strong id="wire-review-btc">0.00000000 BTC</strong></div><div class="row"><span>Conversion rate</span><strong>$96,974.72 CAD / BTC</strong></div><div class="row"><span>Fee</span><strong>$0.00 CAD</strong></div><div class="row"><span>Balance after</span><strong id="wire-review-balance">$133,243.02 CAD</strong></div></div>
         <p class="amount-error" id="wire-withdraw-error" role="alert"></p><button class="primary" id="confirm-wire-withdrawal" data-action="confirm-wire-withdrawal">Withdraw</button><button class="secondary" data-action="page-back" style="margin-top:10px">Edit amount</button>
-        <p class="transfer-notice">Simulation · No real money will be withdrawn or sent to your bank.</p>
+        
       </section>
       <section id="screen-wire-success" data-screen="wire-success" aria-labelledby="wire-success-title" hidden>
         <header class="send-header"><h1 id="wire-success-title" data-page-title tabindex="-1">Wire withdrawal</h1></header>
         <div class="success-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-        <h2 class="success-heading">Withdrawal requested</h2><p class="success-caption">Simulated request · No real withdrawal was submitted.</p>
+        <h2 class="success-heading">Withdrawal requested</h2>
         <div class="review-amount"><span id="wire-success-amount">$0.00</span><small>CAD</small></div>
         <div class="transfer-summary"><div class="row"><span>To</span><strong><span id="wire-success-holder">Veronica Khusial</span><small id="wire-success-destination"></small></strong></div><div class="row"><span>Remaining value</span><strong data-total-balance data-money="$133,243.02">$133,243.02</strong></div><div class="row"><span>Remaining BTC</span><strong><span data-btc-quantity data-money="1.37399747">1.37399747</span> BTC</strong></div></div>
         <button class="primary" data-action="transfer-done">Back to home</button><button class="secondary" data-action="another-wire" style="margin-top:10px">Make another withdrawal</button>
@@ -356,18 +356,18 @@
         <h1 class="page-title">Your card</h1><p class="page-subtitle">A familiar experience. Now in your browser.</p>
         <div class="payment-card" aria-label="Preview payment card"><div class="brand">shakepay</div><div class="card-number">•••• &nbsp; •••• &nbsp; •••• &nbsp; 4242</div><div class="card-bottom"><span>VERONICA KHUSIAL</span><strong>VISA</strong></div></div>
         <div class="rows"><button class="row" data-action="card-details"><span>Card details</span><svg aria-hidden="true"><use href="#chevron"/></svg></button><button class="row" role="switch" aria-checked="false" id="freeze-card"><span>Freeze card</span><span class="toggle" aria-hidden="true"></span></button><button class="row" data-action="card-activity"><span>Recent activity</span><svg aria-hidden="true"><use href="#chevron"/></svg></button></div>
-        <p class="demo-note">Illustrative card only. No payment details are collected.</p>
+        
       </section>
       <section id="screen-earn" data-screen="earn" aria-label="Rewards" hidden>
         <h1 class="page-title">A little extra.</h1><p class="page-subtitle">Good things add up.</p>
         <div class="reward-hero"><svg aria-hidden="true"><use href="#reward"/></svg><h2>Make every day count</h2><p>Keep your streak and your rewards close at hand.</p></div>
         <div class="rows"><button class="row" data-action="streak"><span>Your streak</span><strong>🔥 2 days</strong></button><button class="row" data-action="invite"><span>Invite a friend</span><svg aria-hidden="true"><use href="#chevron"/></svg></button></div>
-        <p class="demo-note">Design preview. No reward eligibility or offers are implied.</p>
+        
       </section>
       <section id="screen-settings" data-screen="settings" aria-label="Settings" hidden>
         <h1 class="page-title">Settings</h1><p class="page-subtitle">Make yourself at home.</p>
         <div class="rows"><button class="row" data-action="profile"><span>Profile</span><strong>Veronica Khusial</strong></button><button class="row" id="hide-balances" role="switch" aria-checked="false"><span>Hide balances</span><span class="toggle" aria-hidden="true"></span></button><button class="row reset-demo" data-action="reset-demo"><span>Reset balance</span><svg aria-hidden="true"><use href="#chevron"/></svg></button><button class="row" data-action="about"><span>About this concept</span><svg aria-hidden="true"><use href="#chevron"/></svg></button></div>
-        <p class="demo-note">Independent proposal. This page does not connect to Shakepay.</p>
+        
       </section>
     </main>
     <nav class="bottom-nav" aria-label="Main navigation">
@@ -562,7 +562,7 @@
       if(name === 'wire') {
         const status = document.getElementById('wire-saved');
         status.hidden = !wireAccount;
-        if(wireAccount) status.textContent = 'Ready in this tab: ' + wireAccount.bank + ' · Account ending ' + wireAccount.account.slice(-4) + '. No bank connection has been made.';
+        if(wireAccount) status.textContent = 'Ready in this tab: ' + wireAccount.bank + ' · Account ending ' + wireAccount.account.slice(-4) + '.';
       }
       if(isSend) document.querySelector('[data-screen="' + name + '"] [data-page-title]').focus({preventScroll:true});
       animateEntry(document.querySelector('[data-screen="' + name + '"]'),'step-enter');
@@ -690,10 +690,10 @@
       if(!fullPageRoutes.has(currentScreen)) document.querySelector('[data-tab="' + currentScreen + '"]').focus({preventScroll:true});
     });
     const actions = {
-      portfolio: () => openSheet('Account balance', '<div class="sheet-amount">' + shown(dollars(wallet.balanceCents)) + '</div><span class="sheet-caption">Total value · CAD</span><div class="rows">' + row('Bitcoin', shown(dollars(wallet.balanceCents))) + row('Available to withdraw', shown(dollars(wallet.balanceCents))) + row('Ethereum', shown('$0.00')) + row('US dollars', shown('US$0.00')) + '<button class="row" data-action="cash"><span>Cash balance</span><strong>' + shown(dollars(wallet.cashBalanceCents)) + '</strong></button></div><p>Simulation · Withdrawals convert BTC to CAD at the example price shown.</p><button class="primary" data-action="send">Withdraw</button><button class="secondary" data-action="done">Done</button>'),
-      cash: () => openSheet('Cash balance', '<div class="sheet-amount">' + shown(dollars(wallet.cashBalanceCents)) + '</div><span class="sheet-caption">Canadian dollars</span><div class="rows">' + row('Available from BTC', shown(dollars(wallet.balanceCents))) + row('Pending', shown('$0.00')) + (wallet.lastTransfer ? row('Last simulated withdrawal', shown('−' + dollars(wallet.lastTransfer.amountCents))) : '') + '</div><button class="primary" data-action="send">Withdraw from BTC</button><button class="secondary" data-action="done">Done</button>'),
-      add: () => openSheet('Add money', '<p>Choose how you’d like to add money.</p><div class="rows">' + choice('Interac e-Transfer','Add Canadian dollars','funding','dollar') + choice('Bank transfer','View bank transfer options','funding','card') + '</div><p>Simulation · Funding methods are not connected.</p>'),
-      funding: () => openSheet('Add money', '<div class="rows">' + row('Account', profile.name) + row('Currency', 'CAD') + '</div><p>Simulation · No bank connection has been made.</p><button class="primary" data-action="done">Done</button>'),
+      portfolio: () => openSheet('Account balance', '<div class="sheet-amount">' + shown(dollars(wallet.balanceCents)) + '</div><span class="sheet-caption">Total value · CAD</span><div class="rows">' + row('Bitcoin', shown(dollars(wallet.balanceCents))) + row('Available to withdraw', shown(dollars(wallet.balanceCents))) + row('Ethereum', shown('$0.00')) + row('US dollars', shown('US$0.00')) + '<button class="row" data-action="cash"><span>Cash balance</span><strong>' + shown(dollars(wallet.cashBalanceCents)) + '</strong></button></div><p>Withdrawals convert BTC to CAD at the displayed rate.</p><button class="primary" data-action="send">Withdraw</button><button class="secondary" data-action="done">Done</button>'),
+      cash: () => openSheet('Cash balance', '<div class="sheet-amount">' + shown(dollars(wallet.cashBalanceCents)) + '</div><span class="sheet-caption">Canadian dollars</span><div class="rows">' + row('Available from BTC', shown(dollars(wallet.balanceCents))) + row('Pending', shown('$0.00')) + (wallet.lastTransfer ? row('Last withdrawal', shown('−' + dollars(wallet.lastTransfer.amountCents))) : '') + '</div><button class="primary" data-action="send">Withdraw from BTC</button><button class="secondary" data-action="done">Done</button>'),
+      add: () => openSheet('Add money', '<p>Choose how you’d like to add money.</p><div class="rows">' + choice('Interac e-Transfer','Add Canadian dollars','funding','dollar') + choice('Bank transfer','View bank transfer options','funding','card') + '</div>'),
+      funding: () => openSheet('Add money', '<div class="rows">' + row('Account', profile.name) + row('Currency', 'CAD') + '</div><button class="primary" data-action="done">Done</button>'),
       send: () => setScreen('send'),
       'send-back': goBack,
       'page-back': goBack,
@@ -703,8 +703,8 @@
       'edit-interac': goBack,
       'confirm-interac': () => completeWithdrawal('interac'),
       'transfer-done': () => setScreen('home',true),
-      'pay-bill': () => openSheet('Pay a bill', '<p>Find a biller and review a payment.</p><p>Simulation · Bill payments are not connected.</p><button class="primary" data-action="done">Back to Send</button>'),
-      'pre-authorized': () => openSheet('Pre-authorized debits', '<p>Manage automatic payments and transfers.</p><p>Simulation · Automatic payments are not connected.</p><button class="primary" data-action="done">Back to Send</button>'),
+      'pay-bill': () => openSheet('Pay a bill', '<p>Find a biller and review a payment.</p><button class="primary" data-action="done">Back to Send</button>'),
+      'pre-authorized': () => openSheet('Pre-authorized debits', '<p>Manage automatic payments and transfers.</p><button class="primary" data-action="done">Back to Send</button>'),
       wire: () => setScreen('wire'),
       'confirm-wire': () => { if(!wireDraft) return; wireAccount = {...wireDraft}; openWithdrawalAmount('wire'); },
       'wire-amount-max': () => setAmount((wallet.balanceCents / 100).toFixed(2),'wire'),
@@ -714,13 +714,13 @@
       transfer: () => openSheet('Move money', '<p>Your everyday actions, a tap away.</p><div class="rows">' + choice('Add money','Explore funding options','add','dollar') + choice('Send money','Choose a payment method','send') + '</div>'),
       profile: () => openSheet('Hello, ' + profile.name + '.', '<div class="rows">' + row('Display name', profile.name) + row('Email', profile.email) + row('Account', 'Personal account') + '</div><button class="primary" data-action="settings">View settings</button>'),
       streak: () => openSheet('Two days and counting.', '<div style="display:flex;align-items:center;gap:12px;margin:25px 0"><svg style="width:45px;height:55px;color:#ff9500" aria-hidden="true"><use href="#flame"/></svg><span class="sheet-amount" style="margin:0">2 days</span></div><p>Your streak is 2 days. Keep making every day count.</p><button class="primary" data-action="done">Keep it going</button>'),
-      invite: () => openSheet('Better with friends', '<svg style="width:70px;height:70px;margin:25px auto" aria-hidden="true"><use href="#cube"/></svg><p>A place to discover referrals and share Shakepay with friends in the proposed web experience.</p><span class="mini-badge">Design preview · No active referral offer</span><button class="primary" data-action="done">Got it</button>'),
+      invite: () => openSheet('Better with friends', '<svg style="width:70px;height:70px;margin:25px auto" aria-hidden="true"><use href="#cube"/></svg><p>A place to discover referrals and share Shakepay with friends in the proposed web experience.</p><button class="primary" data-action="done">Got it</button>'),
       rewards: () => { setScreen('earn'); },
       settings: () => { closeSheet(); setScreen('settings'); },
-      'card-details': () => openSheet('Your card', '<div class="rows">' + row('Cardholder', profile.name) + row('Ending in', '4242') + row('Status', 'Preview card') + '</div><button class="primary" data-action="done">Done</button>'),
+      'card-details': () => openSheet('Your card', '<div class="rows">' + row('Cardholder', profile.name) + row('Ending in', '4242') + '</div><button class="primary" data-action="done">Done</button>'),
       'card-activity': () => openSheet('Recent activity', '<p>Your card has no transactions yet.</p><button class="primary" data-action="done">Done</button>'),
       about: () => openSheet('Made for the web.', '<p>An independent design proposal recreating the supplied Shakepay app screenshots as a responsive, browser-based experience.</p><p>Veronica Khusial’s profile uses the email provided for this prototype. All balances, prices, card details, and transfers are simulated. This concept is not affiliated with, endorsed by, or connected to Shakepay.</p><p>No bank connections, real transactions, or emails sent. The simulated balance is saved in this browser when local storage is available. Entered bank details stay in memory in this tab only and are cleared on refresh.</p><p>Interac logo © Interac, via <a href="https://commons.wikimedia.org/wiki/File:InteracLogo.svg" target="_blank" rel="noopener noreferrer">Wikimedia Commons</a>.</p><button class="primary" data-action="done">Done</button>'),
-      'reset-demo': () => openSheet('Reset balance?', '<p>Restore this prototype to $133,243.02 in Bitcoin, with $0.00 cash, and clear the last simulated transfer.</p><button class="primary" data-action="confirm-reset">Reset account</button><button class="secondary" data-action="done">Cancel</button>'),
+      'reset-demo': () => openSheet('Reset balance?', '<p>Restore BTC holdings to $133,243.02, set cash to $0.00, and clear withdrawal history.</p><button class="primary" data-action="confirm-reset">Reset account</button><button class="secondary" data-action="done">Cancel</button>'),
       'confirm-reset': () => { wallet.reset(); reviewedTransferId = null; updateBalanceDisplays(); closeSheet(); },
       done: closeSheet
     };
